@@ -10,7 +10,7 @@ Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
 Source:		http://gene.i-connect.com/files/%{name}-%{version}.tar.gz
 URL:		http://gene.i-connect.com/files/
 BuildRequires:	ncurses-devel >= 5.0
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 cfe is a Linux console font editor which works well both on the console
