@@ -4,8 +4,9 @@ Name:		cfe
 Version:	0.6
 Release:	3
 License:	GPL
-Group:		Utilities/Console
-Group(pl):	Narzêdzia/Konsola
+Group:		Applications/Console
+Group(de):	Applikationen/Konsole
+Group(pl):	Aplikacje/Konsola
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
 Source0:	http://gene.i-connect.com/files/%{name}-%{version}.tar.gz
 URL:		http://gene.i-connect.com/files/
@@ -28,13 +29,13 @@ fontów.
 
 %build
 
-%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/include/ncurses"
+%{__make} CFLAGS="%{rpmcflags} -Wall -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-%{__make} install-strip \
+%{__make} install \
 	bindir=$RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf CHANGES TODO AUTHOR
@@ -45,5 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc {CHANGES,TODO,AUTHOR}.gz 
-
 %attr(755,root,root) %{_bindir}/cfe
