@@ -5,8 +5,6 @@ Version:	0.10
 Release:	1
 License:	GPL v2
 Group:		Applications/Console
-Group(de):	Applikationen/Konsole
-Group(pl):	Aplikacje/Konsola
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
 Source0:	http://lrn.ru/~osgene/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
