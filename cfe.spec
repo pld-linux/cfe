@@ -30,7 +30,7 @@ fontów.
 %patch -p0
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make} CFLAGS="%{rpmcflags} -Wall -I/usr/include/ncurses"
