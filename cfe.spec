@@ -10,9 +10,9 @@ Source0:	http://lrn.ru/~osgene/files/%{name}-%{version}.tar.gz
 # Source0-md5:	c37cca14cacd6c6be27f8fa6cc10e89b
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://lrn.ru/~osgene/
-BuildRequires:	ncurses-devel >= 5.0
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,10 +38,10 @@ fontów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
