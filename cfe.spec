@@ -2,7 +2,7 @@ Summary:	Console Font Editor
 Summary(pl):	Edytor fontów konsolowych
 Name:		cfe
 Version:	0.12
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Console
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
@@ -42,13 +42,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-gzip -9nf ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog
 %attr(755,root,root) %{_bindir}/cfe
 %{_mandir}/man1/*.1*
