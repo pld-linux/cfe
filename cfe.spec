@@ -7,14 +7,14 @@ License:	GPL
 Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
-Source:		http://gene.i-connect.com/files/%{name}-%{version}.tar.gz
+Source0:	http://gene.i-connect.com/files/%{name}-%{version}.tar.gz
 URL:		http://gene.i-connect.com/files/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-cfe is a Linux console font editor which works well both on the console
-and the terminal. It includes such abilities as various glyph
+cfe is a Linux console font editor which works well both on the
+console and the terminal. It includes such abilities as various glyph
 transforming, multi-level undo, and comparing glyphs of two fonts.
 
 %description -l pl
