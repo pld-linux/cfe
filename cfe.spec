@@ -1,13 +1,13 @@
 Summary:	Console Font Editor
 Summary(pl):	Edytor fontów konsolowych
 Name:		cfe
-Version:	0.10
+Version:	0.12
 Release:	1
 License:	GPL v2
 Group:		Applications/Console
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
-Source0:	http://lrn.ru/~osgene/%{name}-%{version}.tar.gz
-Patch0:		%{name}-DESTDIR.patch
+Source0:	http://lrn.ru/~osgene/files/%{name}-%{version}.tar.gz
+Patch0:         %{name}-DESTDIR.patch
 URL:		http://lrn.ru/~osgene/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	automake
@@ -27,7 +27,7 @@ fontów.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -p0
 
 %build
 aclocal
@@ -37,6 +37,8 @@ autoconf
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
