@@ -1,6 +1,3 @@
-#
-# TODO: add icon and desktop
-#
 Summary:	Console Font Editor
 Summary(pl):	Edytor fontów konsolowych
 Name:		cfe
