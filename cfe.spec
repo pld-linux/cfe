@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		Applications/Console
 Vendor:		Eugene Osintsev <osgene@omskelecom.ru>
 Source0:	http://lrn.ru/~osgene/files/%{name}-%{version}.tar.gz
-Patch0:         %{name}-DESTDIR.patch
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://lrn.ru/~osgene/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	automake
