@@ -1,0 +1,19 @@
+--- Makefile.in.orig	Mon Feb 25 12:55:16 2002
++++ Makefile.in	Mon Feb 25 12:56:28 2002
+@@ -23,12 +23,12 @@
+ 	$(CC) -o $@ $(OBJS) -l@CURSES_LIB@
+ 
+ install: cfe
+-	$(INSTALL_PROGRAM) cfe $(bindir)
+-	$(INSTALL_DATA) cfe.1 $(mandir)
++	$(INSTALL_PROGRAM) cfe $(DESTDIR)/$(bindir)
++	$(INSTALL_DATA) cfe.1 $(DESTDIR)/$(mandir)
+ 
+ install-strip: cfe
+-	$(INSTALL_PROGRAM) -s cfe $(bindir)
+-	$(INSTALL_DATA) cfe.1 $(mandir)
++	$(INSTALL_PROGRAM) -s cfe $(DESTDIR)/$(bindir)
++	$(INSTALL_DATA) cfe.1 $(DESTDIR)/$(mandir)
+ 
+ uninstall:
+ 	rm -f $(bindir)/cfe
