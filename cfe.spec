@@ -28,13 +28,13 @@ fontów.
 
 %build
 
-make CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/include/ncurses"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-make install-strip \
+%{__make} install-strip \
 	bindir=$RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf CHANGES TODO AUTHOR
