@@ -2,7 +2,7 @@ Summary:	Console Font Editor
 Summary(pl):	Edytor fontów konsolowych
 Name:		cfe
 Version:	0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
