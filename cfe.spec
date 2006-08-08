@@ -28,7 +28,7 @@ fontów.
 
 %prep
 %setup -q
-%patch -p0
+%patch0 -p0
 
 %build
 %{__aclocal}
