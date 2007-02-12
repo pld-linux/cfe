@@ -1,5 +1,5 @@
 Summary:	Console Font Editor
-Summary(pl):	Edytor font體 konsolowych
+Summary(pl.UTF-8):   Edytor font贸w konsolowych
 Name:		cfe
 Version:	0.12
 Release:	4
@@ -20,11 +20,11 @@ cfe is a Linux console font editor which works well both on the
 console and the terminal. It includes such abilities as various glyph
 transforming, multi-level undo, and comparing glyphs of two fonts.
 
-%description -l pl
-cfe jest edytorem font體 konsolowych dla Linuksa, pracuj眂ym zar體no
-na konsoli jak i terminalu. Posiada takie mo縧iwo禼i, jak r罂ne
-przekszta砪enia font體, wielostopniowe cofanie i por體nywanie dw骳h
-font體.
+%description -l pl.UTF-8
+cfe jest edytorem font贸w konsolowych dla Linuksa, pracuj膮cym zar贸wno
+na konsoli jak i terminalu. Posiada takie mo偶liwo艣ci, jak r贸偶ne
+przekszta艂cenia font贸w, wielostopniowe cofanie i por贸wnywanie dw贸ch
+font贸w.
 
 %prep
 %setup -q
