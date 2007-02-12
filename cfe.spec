@@ -1,5 +1,5 @@
 Summary:	Console Font Editor
-Summary(pl.UTF-8):   Edytor fontów konsolowych
+Summary(pl.UTF-8):	Edytor fontów konsolowych
 Name:		cfe
 Version:	0.12
 Release:	4
